@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    // List of pages that should have .html appended
+    const pages = {
+      "index": "/index.html",
+      "countertop-installation": "/countertop-installation.html",
+      "countertop-repair-jacksonville-fl": "/countertop-repair-jacksonville-fl.html",
+      "countertop-resurfacing": "/countertop-resurfacing.html",
+      "intake-form": "/intake-form.html",
+      "scheduling": "/scheduling.html",
+      "reschedule-appointment": "/reschedule-appointment.html"
+    };
+
+    // Get the current path (e.g., "/countertop-installation")
+    const path = window.location.pathname.replace(/^\/|\/$/g, ''); // Remove leading/trailing slashes
+
+    // If the path matches a key in the pages object, redirect
+    if (pages[path]) {
+      window.location.href = pages[path];
+    }
+  </script>
+</head>
+<body>
+  <p>If you are not redirected automatically, <a href="/">return to the homepage</a>.</p>
+</body>
+</html>
