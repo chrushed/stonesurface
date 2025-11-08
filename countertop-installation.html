@@ -186,6 +186,17 @@
 </script>
 
 
+<script>
+  const path = window.location.pathname;
+  const htmlExtPages = [
+    "/index", "/countertop-installation", "/countertop-repair-jacksonville-fl",
+    "/countertop-resurfacing", "/intake-form", "/scheduling", "/reschedule-appointment"
+  ];
+
+  if (htmlExtPages.includes(path) && !path.endsWith('.html')) {
+    window.location.href = path + '.html';
+  }
+</script>
   
 
   
